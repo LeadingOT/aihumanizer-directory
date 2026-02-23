@@ -1,0 +1,38 @@
+# AccountingAI.tools
+
+> A comprehensive directory of AI tools for accounting and finance professionals. Compare features, pricing, and reviews for bookkeeping, expense management, tax preparation, invoicing, AP/AR automation, audit, financial reporting, and forecasting AI tools.
+
+## Categories
+
+- [Bookkeeping & Data Entry](/category/bookkeeping-&-data-entry): AI tools for automated bookkeeping and data entry
+- [Expense Management](/category/expense-management): AI-powered expense tracking and management
+- [Tax Preparation](/category/tax-preparation): AI tools for tax filing, planning, and compliance
+- [Invoicing & Billing](/category/invoicing-&-billing): AI tools for automated invoicing and billing
+- [AP-AR Automation](/category/ap-ar-automation): AI tools for accounts payable and receivable automation
+- [Audit & Compliance](/category/audit-&-compliance): AI tools for audit automation and compliance monitoring
+- [Financial Reporting](/category/financial-reporting): AI tools for financial close and reporting
+- [Forecasting & Planning](/category/forecasting-&-planning): AI tools for financial forecasting and FP&A
+
+## Comparison Guides
+
+- [Best AI Bookkeeping Software](/best/ai-bookkeeping-software): Top 5 AI bookkeeping tools compared
+- [Best AI Expense Management Tools](/best/ai-expense-management): Top 3 AI expense platforms compared
+- [Best AI Tax Preparation Tools](/best/ai-tax-preparation-tools): Top 5 AI tax tools compared
+- [Best AI Accounts Payable Automation](/best/ai-accounts-payable-automation): Top 4 AI AP tools compared
+- [Best AI Financial Forecasting Tools](/best/ai-financial-forecasting): Top AI FP&A platforms compared
+
+## All Tools
+
+AvidXchange, BILL, Black Ore, BlackLine, Booke AI, Brex, CoCounsel Tax, Cube, Datarails, DataSnipper, Digits, Docyt, Expensify, Filed, Hive Tax, Invoicer.ai, MindBridge, Numeric, OneStream, Ramp, Sage Intacct, Stampli, TaxGPT, Tipalti, Tofu, Vena Solutions, Vic.ai, Zeni
+
+## Key Facts
+
+- 28 AI tools reviewed and compared
+- 8 categories covering all accounting workflows
+- 5 in-depth comparison guides
+- Updated February 2026
+- Independent reviews — not sponsored
+
+## Sitemap
+
+- [Sitemap](/sitemap-index.xml)
