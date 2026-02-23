@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const tools = allListings
+  .filter((l) => l.data.category === 'Tax Preparation')
+  .sort((a, b) => (b.data.rating || 0) - (a.data.rating || 0));
+
+const featureList = [
+  'AI tax research',
+  'Automated return preparation',
+  'Document analysis',
+  'Multi-state support',
+  'CPA-verified accuracy',
+  'Tax software integration',
+  'Client portal',
+];
+
+const faqs = [
+  { question: 'How does AI help with tax preparation?', answer: 'AI tax tools automate document sorting, data extraction, return preparation, and tax research. They can identify deductions, flag anomalies, and prepare returns to review-ready status, significantly reducing manual preparation time.' },
+  { question: 'Are AI tax tools accurate enough for professional use?', answer: 'Yes, leading AI tax platforms like Filed and CoCounsel Tax are designed for professionals and include CPA-audited accuracy checks. They serve as powerful assistants that speed up work while maintaining professional standards.' },
+  { question: 'Can AI tax software replace a CPA?', answer: 'AI tax software is designed to augment CPAs, not replace them. These tools handle routine tasks and research, allowing CPAs to focus on complex tax planning and client relationships.' },
+  { question: 'What should I look for in AI tax software?', answer: 'Key features include integration with existing tax software, accuracy verification, multi-state support, document management, and the ability to learn firm-specific preferences over time.' },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Best AI Tax Preparation Tools (2026)',
+  datePublished: '2026-02-23',
+  dateModified: '2026-02-23',
+};
+---
+
+<BaseLayout
+  title="Best AI Tax Preparation Tools (2026) - Top 5 Compared"
+  description="Compare the best AI tax preparation software for 2026. Reviews of TaxGPT, Filed, Black Ore, CoCounsel Tax, and Hive Tax."
+  schema={schema}
+>
+  <article class="max-w-4xl">
+    <h1 class="text-3xl font-bold mb-4">Best AI Tax Preparation Tools (2026)</h1>
+    <p class="text-gray-600 mb-8">
+      AI is transforming tax preparation by automating document processing, research, and return preparation. These tools help CPAs and tax professionals work faster while maintaining accuracy.
+    </p>
+
+    <ComparisonTable items={tools.map((t) => t.data)} featureList={featureList} title="Feature Comparison" />
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-6">Detailed Reviews</h2>
+      {tools.map((tool) => (
+        <div class="border border-gray-200 rounded-lg p-6 mb-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold">
+              <a href={`/listing/${tool.data.slug}`} class="hover:text-blue-600">{tool.data.name}</a>
+            </h3>
+            {tool.data.rating && <span class="text-yellow-600">★ {tool.data.rating.toFixed(1)}</span>}
+          </div>
+          <p class="text-gray-600 mb-3">{tool.data.description}</p>
+          <p class="text-sm"><strong>Pricing:</strong> {tool.data.pricing.startingPrice || tool.data.pricing.model}</p>
+        </div>
+      ))}
+    </section>
+
+    <FAQSection faqs={faqs} />
+  </article>
+</BaseLayout>

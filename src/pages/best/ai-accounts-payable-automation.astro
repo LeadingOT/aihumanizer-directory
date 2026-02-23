@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const tools = allListings
+  .filter((l) => l.data.category === 'AP-AR Automation')
+  .sort((a, b) => (b.data.rating || 0) - (a.data.rating || 0));
+
+const featureList = [
+  'AI invoice processing',
+  'Automated GL coding',
+  'Approval workflows',
+  'Fraud detection',
+  'Payment automation',
+  'Vendor management',
+  'ERP integration',
+];
+
+const faqs = [
+  { question: 'What is AI accounts payable automation?', answer: 'AI AP automation uses artificial intelligence to process invoices, code transactions to the general ledger, route approvals, detect fraud, and execute payments — reducing manual work by up to 80%.' },
+  { question: 'How much can AP automation save my company?', answer: 'Companies typically save $5-15 per invoice processed and reduce processing time from days to hours. Most organizations see ROI within 6-12 months of implementation.' },
+  { question: 'Which AP automation tool is best for mid-market companies?', answer: 'Stampli and AvidXchange are excellent choices for mid-market companies, offering comprehensive features at accessible price points with good scalability.' },
+  { question: 'Do AP automation tools support international payments?', answer: 'Yes, platforms like Tipalti specialize in global payments, supporting 196 countries and 120 currencies with built-in tax compliance and fraud prevention.' },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Best AI Accounts Payable Automation Tools (2026)',
+  datePublished: '2026-02-23',
+  dateModified: '2026-02-23',
+};
+---
+
+<BaseLayout
+  title="Best AI Accounts Payable Automation Tools (2026) - Top 4 Compared"
+  description="Compare the best AI AP automation software for 2026. Reviews of Vic.ai, Stampli, Tipalti, and AvidXchange."
+  schema={schema}
+>
+  <article class="max-w-4xl">
+    <h1 class="text-3xl font-bold mb-4">Best AI Accounts Payable Automation Tools (2026)</h1>
+    <p class="text-gray-600 mb-8">
+      AI-powered AP automation transforms invoice processing from a manual bottleneck into a streamlined workflow. These platforms use AI for invoice capture, coding, approval routing, and payment execution.
+    </p>
+
+    <ComparisonTable items={tools.map((t) => t.data)} featureList={featureList} title="Feature Comparison" />
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-6">Detailed Reviews</h2>
+      {tools.map((tool) => (
+        <div class="border border-gray-200 rounded-lg p-6 mb-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold">
+              <a href={`/listing/${tool.data.slug}`} class="hover:text-blue-600">{tool.data.name}</a>
+            </h3>
+            {tool.data.rating && <span class="text-yellow-600">★ {tool.data.rating.toFixed(1)}</span>}
+          </div>
+          <p class="text-gray-600 mb-3">{tool.data.description}</p>
+          <p class="text-sm"><strong>Pricing:</strong> {tool.data.pricing.startingPrice || tool.data.pricing.model}</p>
+        </div>
+      ))}
+    </section>
+
+    <FAQSection faqs={faqs} />
+  </article>
+</BaseLayout>

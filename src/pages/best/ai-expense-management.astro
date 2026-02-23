@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const tools = allListings
+  .filter((l) => l.data.category === 'Expense Management')
+  .sort((a, b) => (b.data.rating || 0) - (a.data.rating || 0));
+
+const featureList = [
+  'AI receipt scanning',
+  'Auto-categorization',
+  'Corporate cards',
+  'Spend analytics',
+  'Policy enforcement',
+  'Mobile app',
+  'Accounting integrations',
+];
+
+const faqs = [
+  { question: 'What is AI expense management software?', answer: 'AI expense management software automates receipt capture, transaction categorization, policy enforcement, and spend reporting using artificial intelligence. These tools learn from patterns to improve accuracy and reduce manual data entry.' },
+  { question: 'Which AI expense tool is best for startups?', answer: 'Ramp is an excellent choice for startups as it is completely free and combines corporate cards with AI-powered expense management, bill pay, and spend analytics.' },
+  { question: 'How much time does AI expense management save?', answer: 'AI expense tools typically save finance teams 5-10 hours per week by automating receipt capture, categorization, and report generation. Companies also report 3-5% savings on overall spend through better visibility.' },
+  { question: 'Do AI expense tools integrate with accounting software?', answer: 'Yes, all leading AI expense management platforms integrate with QuickBooks, Xero, NetSuite, Sage Intacct, and other major accounting systems for seamless data sync.' },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Best AI Expense Management Tools (2026)',
+  datePublished: '2026-02-23',
+  dateModified: '2026-02-23',
+};
+---
+
+<BaseLayout
+  title="Best AI Expense Management Tools (2026) - Top 3 Compared"
+  description="Compare the best AI expense management software for 2026. Reviews of Ramp, Brex, and Expensify with features, pricing, and ratings."
+  schema={schema}
+>
+  <article class="max-w-4xl">
+    <h1 class="text-3xl font-bold mb-4">Best AI Expense Management Tools (2026)</h1>
+    <p class="text-gray-600 mb-8">
+      AI-powered expense management tools automate receipt capture, categorize transactions, enforce spending policies, and provide real-time spend visibility. Here are the top platforms compared.
+    </p>
+
+    <ComparisonTable items={tools.map((t) => t.data)} featureList={featureList} title="Feature Comparison" />
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-6">Detailed Reviews</h2>
+      {tools.map((tool) => (
+        <div class="border border-gray-200 rounded-lg p-6 mb-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold">
+              <a href={`/listing/${tool.data.slug}`} class="hover:text-blue-600">{tool.data.name}</a>
+            </h3>
+            {tool.data.rating && <span class="text-yellow-600">★ {tool.data.rating.toFixed(1)}</span>}
+          </div>
+          <p class="text-gray-600 mb-3">{tool.data.description}</p>
+          <p class="text-sm"><strong>Pricing:</strong> {tool.data.pricing.startingPrice || tool.data.pricing.model}</p>
+        </div>
+      ))}
+    </section>
+
+    <FAQSection faqs={faqs} />
+  </article>
+</BaseLayout>

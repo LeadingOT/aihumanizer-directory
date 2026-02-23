@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const tools = allListings
+  .filter((l) => l.data.category === 'Bookkeeping & Data Entry')
+  .sort((a, b) => (b.data.rating || 0) - (a.data.rating || 0));
+
+const featureList = [
+  'Auto-categorization',
+  'Bank reconciliation',
+  'Multi-entity support',
+  'Receipt scanning',
+  'Real-time dashboards',
+  'QuickBooks integration',
+  'Xero integration',
+];
+
+const faqs = [
+  { question: 'What is AI bookkeeping software?', answer: 'AI bookkeeping software uses artificial intelligence to automate transaction categorization, bank reconciliation, document processing, and financial reporting. These tools learn from historical data to improve accuracy over time and reduce manual data entry.' },
+  { question: 'Can AI replace my bookkeeper?', answer: 'AI bookkeeping tools can handle most routine bookkeeping tasks like categorization and reconciliation, but complex transactions and strategic financial decisions still benefit from human expertise. Many platforms use a hybrid AI + human approach for best results.' },
+  { question: 'How accurate is AI bookkeeping?', answer: 'Leading AI bookkeeping platforms achieve 95-99% accuracy on transaction categorization, with continuous learning improving over time. Most tools include human review workflows for edge cases.' },
+  { question: 'What integrations should AI bookkeeping software have?', answer: 'Look for integrations with QuickBooks, Xero, bank feeds, payment processors, and your existing accounting stack. The best tools connect seamlessly with your current workflow.' },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Best AI Bookkeeping Software (2026)',
+  description: 'Compare the top AI-powered bookkeeping tools for automated transaction categorization, bank reconciliation, and financial reporting.',
+  datePublished: '2026-02-23',
+  dateModified: '2026-02-23',
+};
+---
+
+<BaseLayout
+  title="Best AI Bookkeeping Software (2026) - Top 5 Compared"
+  description="Compare the best AI bookkeeping software for 2026. Expert reviews of Digits, Zeni, Docyt, Booke AI, and Tofu with features, pricing, and ratings."
+  schema={schema}
+>
+  <article class="max-w-4xl">
+    <h1 class="text-3xl font-bold mb-4">Best AI Bookkeeping Software (2026)</h1>
+    <p class="text-gray-600 mb-8">
+      AI bookkeeping software automates transaction categorization, bank reconciliation, and financial reporting — saving hours of manual work every week. We've compared the top platforms to help you choose the right one for your business.
+    </p>
+
+    <ComparisonTable items={tools.map((t) => t.data)} featureList={featureList} title="Feature Comparison" />
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-6">Detailed Reviews</h2>
+      {tools.map((tool) => (
+        <div class="border border-gray-200 rounded-lg p-6 mb-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold">
+              <a href={`/listing/${tool.data.slug}`} class="hover:text-blue-600">{tool.data.name}</a>
+            </h3>
+            {tool.data.rating && <span class="text-yellow-600">★ {tool.data.rating.toFixed(1)}</span>}
+          </div>
+          <p class="text-gray-600 mb-3">{tool.data.description}</p>
+          <p class="text-sm"><strong>Pricing:</strong> {tool.data.pricing.startingPrice || tool.data.pricing.model}</p>
+        </div>
+      ))}
+    </section>
+
+    <FAQSection faqs={faqs} />
+  </article>
+</BaseLayout>
