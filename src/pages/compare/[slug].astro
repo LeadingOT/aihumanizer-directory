@@ -5,29 +5,23 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const listings = await getCollection('listings');
-
-  // Group by category
-  const byCategory: Record<string, typeof listings> = {};
-  for (const l of listings) {
-    const cat = l.data.category;
-    if (!byCategory[cat]) byCategory[cat] = [];
-    byCategory[cat].push(l);
-  }
-
-  const paths = [];
-  for (const tools of Object.values(byCategory)) {
-    for (let i = 0; i < tools.length; i++) {
-      for (let j = 0; j < tools.length; j++) {
-        if (i === j) continue;
-        const a = tools[i].data;
-        const b = tools[j].data;
-        paths.push({
-          params: { slug: `${a.slug}-vs-${b.slug}` },
-          props: { toolA: a, toolB: b },
-        });
-      }
+  const paths: any[] = [];
+  
+  // Extract all listings data
+  const tools = listings.map(l => l.data);
+  
+  // Generate one page per ordered pair (A vs B where A < B alphabetically)
+  // Cross-category comparisons allowed
+  for (let i = 0; i < tools.length; i++) {
+    for (let j = i + 1; j < tools.length; j++) {
+      const [a, b] = [tools[i], tools[j]].sort((x, y) => x.slug.localeCompare(y.slug));
+      paths.push({
+        params: { slug: `${a.slug}-vs-${b.slug}` },
+        props: { toolA: a, toolB: b },
+      });
     }
   }
+  
   return paths;
 }
 
