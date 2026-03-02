@@ -26,8 +26,24 @@ export async function getStaticPaths() {
 }
 
 const { toolA, toolB } = Astro.props;
-const title = `${toolA.name} vs ${toolB.name}: Which ${toolA.category} Tool Is Better in 2026?`;
-const description = `Compare ${toolA.name} vs ${toolB.name} side by side. Features, pricing, pros & cons to help you choose the best ${toolA.category.toLowerCase()} tool.`;
+
+// Dynamic title based on price difference (CoS CTR optimization)
+const priceA = toolA.pricing?.startingPrice ? parseInt(toolA.pricing.startingPrice.replace(/[^0-9]/g, '')) : 0;
+const priceB = toolB.pricing?.startingPrice ? parseInt(toolB.pricing.startingPrice.replace(/[^0-9]/g, '')) : 0;
+
+let title;
+if (priceA > 0 && priceB > 0 && Math.abs(priceA - priceB) > 20) {
+  // Significant price difference → emphasize cost
+  title = `${toolA.name} vs ${toolB.name}: Which Saves More? [Real Cost Comparison 2026]`;
+} else if (toolA.rating !== toolB.rating) {
+  // Different ratings → emphasize quality
+  title = `${toolA.name} vs ${toolB.name}: Which Rates Higher? [Side-by-Side 2026]`;
+} else {
+  // Default → feature focus
+  title = `${toolA.name} vs ${toolB.name}: Honest Comparison [Features & Pricing 2026]`;
+}
+
+const description = `${toolA.name} vs ${toolB.name} side-by-side comparison. Pricing, features, pros & cons from real users. Updated March 2026 →`;
 
 const faqs = [
   {
