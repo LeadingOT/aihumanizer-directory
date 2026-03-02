@@ -1,14 +1,36 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
 import { marked } from 'marked';
 
+// Import all glossary entries
+import accrualAccounting from '../../content/glossary/accrual-accounting.json';
+import accountsPayable from '../../content/glossary/accounts-payable.json';
+import accountsReceivable from '../../content/glossary/accounts-receivable.json';
+import bankReconciliation from '../../content/glossary/bank-reconciliation.json';
+import cashFlowStatement from '../../content/glossary/cash-flow-statement.json';
+import chartOfAccounts from '../../content/glossary/chart-of-accounts.json';
+import doubleEntryBookkeeping from '../../content/glossary/double-entry-bookkeeping.json';
+import expenseCategorization from '../../content/glossary/expense-categorization.json';
+import generalLedger from '../../content/glossary/general-ledger.json';
+import taxCompliance from '../../content/glossary/tax-compliance.json';
+
 export async function getStaticPaths() {
-  const glossaryEntries = await getCollection('glossary');
+  const glossaryEntries = [
+    accrualAccounting,
+    accountsPayable,
+    accountsReceivable,
+    bankReconciliation,
+    cashFlowStatement,
+    chartOfAccounts,
+    doubleEntryBookkeeping,
+    expenseCategorization,
+    generalLedger,
+    taxCompliance,
+  ];
   
   return glossaryEntries.map((entry) => ({
-    params: { slug: entry.data.slug },
-    props: { entry: entry.data },
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 

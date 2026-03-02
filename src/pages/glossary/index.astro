@@ -1,13 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
 
-const glossaryEntries = await getCollection('glossary');
+// Import glossary JSON files directly
+import accrualAccounting from '../../content/glossary/accrual-accounting.json';
+import accountsPayable from '../../content/glossary/accounts-payable.json';
+import accountsReceivable from '../../content/glossary/accounts-receivable.json';
+import bankReconciliation from '../../content/glossary/bank-reconciliation.json';
+import cashFlowStatement from '../../content/glossary/cash-flow-statement.json';
+import chartOfAccounts from '../../content/glossary/chart-of-accounts.json';
+import doubleEntryBookkeeping from '../../content/glossary/double-entry-bookkeeping.json';
+import expenseCategorization from '../../content/glossary/expense-categorization.json';
+import generalLedger from '../../content/glossary/general-ledger.json';
+import taxCompliance from '../../content/glossary/tax-compliance.json';
 
-// Sort alphabetically
-const sortedEntries = glossaryEntries.sort((a, b) => 
-  a.data.title.localeCompare(b.data.title)
-);
+const glossaryEntries = [
+  accrualAccounting,
+  accountsPayable,
+  accountsReceivable,
+  bankReconciliation,
+  cashFlowStatement,
+  chartOfAccounts,
+  doubleEntryBookkeeping,
+  expenseCategorization,
+  generalLedger,
+  taxCompliance,
+].sort((a, b) => a.title.localeCompare(b.title));
 
 const title = "Accounting & AI Glossary - Master Key Terms | AccountingAI.tools";
 const description = "Complete glossary of accounting and AI automation terms. Learn accrual accounting, bank reconciliation, chart of accounts, and more with real examples.";
@@ -18,7 +35,7 @@ const collectionSchema = {
   '@type': 'CollectionPage',
   name: title,
   description: description,
-  numberOfItems: sortedEntries.length
+  numberOfItems: glossaryEntries.length
 };
 ---
 
@@ -30,7 +47,7 @@ const collectionSchema = {
         Accounting & AI Glossary
       </h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Master accounting concepts and AI automation. {sortedEntries.length} terms explained with real examples and tool recommendations.
+        Master accounting concepts and AI automation. {glossaryEntries.length} terms explained with real examples and tool recommendations.
       </p>
     </div>
 
@@ -46,19 +63,19 @@ const collectionSchema = {
 
     <!-- Glossary Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {sortedEntries.map((entry) => (
+      {glossaryEntries.map((entry) => (
         <a 
-          href={`/glossary/${entry.data.slug}`}
+          href={`/glossary/${entry.slug}`}
           class="glossary-card block p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-lg transition group"
         >
           <h2 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-blue-600">
-            {entry.data.title.replace(/:.+/, '')}
+            {entry.title.replace(/:.+/, '')}
           </h2>
           <p class="text-gray-600 mb-3 line-clamp-3">
-            {entry.data.description}
+            {entry.description}
           </p>
           <div class="flex items-center justify-between text-sm text-gray-500">
-            <span>⏱️ {entry.data.readingTime} min read</span>
+            <span>⏱️ {entry.readingTime} min read</span>
             <span class="text-blue-600 group-hover:underline">Read more →</span>
           </div>
         </a>
