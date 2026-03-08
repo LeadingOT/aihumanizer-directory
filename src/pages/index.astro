@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ListingCard from '../components/ListingCard.astro';
+import AISearch from '../components/AISearch.astro';
 import { getCollection } from 'astro:content';
 
 const allListings = await getCollection('listings');
@@ -27,6 +28,9 @@ const schema = {
       Discover and compare the top AI-powered tools for accounting, bookkeeping, tax preparation, invoicing, expense management, and financial planning. Updated for 2026.
     </p>
   </section>
+
+  <!-- AI Search -->
+  <AISearch />
 
   <!-- Categories -->
   <section class="mb-12">
