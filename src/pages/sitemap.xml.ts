@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 
-const SITE_URL = 'https://accountingai.tools';
+const SITE_URL = 'https://aihumanizer.tools';
 
 // Import listings data
 import listingsData from '../data/listings.json';

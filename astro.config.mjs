@@ -4,7 +4,7 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://accountingai.tools',
+  site: 'https://aihumanizer.tools',
   output: 'server',
   adapter: vercel(),
   

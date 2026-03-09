@@ -1,0 +1,169 @@
+{
+  "listings": [
+    {
+      "name": "Undetectable.AI",
+      "slug": "undetectable-ai",
+      "description": "Leading AI humanizer that makes AI text undetectable by all major AI detectors. Built-in detector included.",
+      "url": "https://undetectable.ai",
+      "pricing": "Free trial, paid from $9.99/month",
+      "pricingType": "freemium",
+      "features": ["Built-in detector", "Multiple writing styles", "Bulk processing", "API access", "Chrome extension"],
+      "category": "Premium",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "HIX Bypass",
+      "slug": "hix-bypass",
+      "description": "Advanced AI humanizer with 100% bypass rate for GPTZero, Turnitin, and Originality.AI.",
+      "url": "https://hix.ai/bypass-ai-detection",
+      "pricing": "Free 300 words, paid from $6.99/month",
+      "pricingType": "freemium",
+      "features": ["100% bypass rate", "SEO-friendly", "Plagiarism-free", "Multiple modes", "50+ languages"],
+      "category": "Premium",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "StealthGPT",
+      "slug": "stealthgpt",
+      "description": "Undetectable AI content generator with built-in humanization for academic and professional use.",
+      "url": "https://stealthgpt.ai",
+      "pricing": "From $14.99/month",
+      "pricingType": "paid",
+      "features": ["Stealth engine", "Academic mode", "Business mode", "Undetectable", "Chrome extension"],
+      "category": "Professional",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "BypassGPT",
+      "slug": "bypassgpt",
+      "description": "AI humanizer that rewrites AI text to bypass all AI detectors while maintaining quality.",
+      "url": "https://bypassgpt.ai",
+      "pricing": "Free trial, paid from $9.99/month",
+      "pricingType": "freemium",
+      "features": ["AI rewriting", "SEO optimization", "Keyword integration", "Bulk processing"],
+      "category": "SEO",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Humbot",
+      "slug": "humbot",
+      "description": "AI humanizer specializing in academic writing with Turnitin bypass capabilities.",
+      "url": "https://humbot.ai",
+      "pricing": "Free trial, paid from $9.99/month",
+      "pricingType": "freemium",
+      "features": ["Turnitin bypass", "Academic tone", "Grammar check", "Multiple languages"],
+      "category": "Education",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "StealthWriter",
+      "slug": "stealthwriter",
+      "description": "Powerful AI humanizer with real-time detection checking and quality preservation.",
+      "url": "https://stealthwriter.ai",
+      "pricing": "Free plan, paid from $12/month",
+      "pricingType": "freemium",
+      "features": ["Real-time check", "Quality retention", "SEO-friendly", "API"],
+      "category": "Content",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "QuillBot",
+      "slug": "quillbot",
+      "description": "Popular paraphrasing tool with AI humanization modes for natural-sounding text.",
+      "url": "https://quillbot.com",
+      "pricing": "Free with limits, Premium from $8.33/month",
+      "pricingType": "freemium",
+      "features": ["7 paraphrasing modes", "Grammar checker", "Plagiarism check", "Citation generator"],
+      "category": "Writing",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "AI Humanize",
+      "slug": "ai-humanize",
+      "description": "Free AI humanizer with unlimited usage and no signup required.",
+      "url": "https://aihumanize.com",
+      "pricing": "Free",
+      "pricingType": "free",
+      "features": ["Unlimited free", "No signup", "Fast processing", "Quality output"],
+      "category": "Free Tools",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Phrasly",
+      "slug": "phrasly",
+      "description": "AI humanizer focused on student writing with plagiarism-free guarantee.",
+      "url": "https://phrasly.ai",
+      "pricing": "Free trial, paid from $9.99/month",
+      "pricingType": "freemium",
+      "features": ["Student-friendly", "Plagiarism check", "Multiple tones", "Citation help"],
+      "category": "Education",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "WriteHuman",
+      "slug": "writehuman",
+      "description": "AI to human text converter with focus on maintaining original meaning.",
+      "url": "https://writehuman.ai",
+      "pricing": "Free trial, paid from $9/month",
+      "pricingType": "freemium",
+      "features": ["Meaning preservation", "Natural flow", "Detection bypass", "Bulk mode"],
+      "category": "Content",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Smodin",
+      "slug": "smodin",
+      "description": "Multi-language AI humanizer with rewriting and plagiarism checking.",
+      "url": "https://smodin.io/rewriter",
+      "pricing": "Free limited, paid from $10/month",
+      "pricingType": "freemium",
+      "features": ["100+ languages", "Rewriter", "Plagiarism check", "Citation machine"],
+      "category": "Multilingual",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "NetusAI",
+      "slug": "netusai",
+      "description": "AI detector and paraphraser combo for creating undetectable content.",
+      "url": "https://netus.ai",
+      "pricing": "Free trial, paid from $19/month",
+      "pricingType": "freemium",
+      "features": ["Detector + paraphraser", "99.97% bypassing score", "SEO-friendly"],
+      "category": "Professional",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "AI Undetect",
+      "slug": "ai-undetect",
+      "description": "Simple AI humanizer with focus on speed and quality.",
+      "url": "https://aiundetect.com",
+      "pricing": "Free with limits, paid from $7.99/month",
+      "pricingType": "freemium",
+      "features": ["Fast processing", "Quality output", "Detector bypass", "Simple UI"],
+      "category": "Essentials",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "HumanizeAI Text",
+      "slug": "humanizeaitext",
+      "description": "Free online tool to convert AI text to human-like writing instantly.",
+      "url": "https://humanizeaitext.org",
+      "pricing": "Free",
+      "pricingType": "free",
+      "features": ["100% free", "No registration", "Instant results", "User-friendly"],
+      "category": "Free Tools",
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "CogniBypass",
+      "slug": "cognibypass",
+      "description": "AI content humanizer with advanced neural rewriting algorithms.",
+      "url": "https://cognibypass.com",
+      "pricing": "From $12.99/month",
+      "pricingType": "paid",
+      "features": ["Neural rewriting", "Context preservation", "Tone matching", "API"],
+      "category": "Advanced",
+      "logo": "https://via.placeholder.com/150"
+    }
+  ]
+}
