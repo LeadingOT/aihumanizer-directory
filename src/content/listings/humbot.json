@@ -2,7 +2,7 @@
   "name": "Humbot",
   "slug": "humbot",
   "tagline": "Academic writing with Turnitin bypass",
-  "category": "Education",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$9.99/mo"

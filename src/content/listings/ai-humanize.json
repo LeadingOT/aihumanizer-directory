@@ -2,7 +2,7 @@
   "name": "AI Humanize",
   "slug": "ai-humanize",
   "tagline": "Free unlimited AI humanization",
-  "category": "Free Tools",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "free"
   },

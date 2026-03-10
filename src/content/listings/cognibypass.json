@@ -2,7 +2,7 @@
   "name": "CogniBypass",
   "slug": "cognibypass",
   "tagline": "Advanced neural rewriting",
-  "category": "Advanced",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "paid",
     "startingPrice": "$12.99/mo"

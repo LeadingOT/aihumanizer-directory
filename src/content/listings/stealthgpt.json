@@ -2,7 +2,7 @@
   "name": "StealthGPT",
   "slug": "stealthgpt",
   "tagline": "Undetectable AI content generator",
-  "category": "Professional",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "paid",
     "startingPrice": "$14.99/mo"

@@ -2,7 +2,7 @@
   "name": "QuillBot",
   "slug": "quillbot",
   "tagline": "Popular paraphrasing with AI modes",
-  "category": "Writing",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$8.33/mo"

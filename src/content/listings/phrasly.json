@@ -2,7 +2,7 @@
   "name": "Phrasly",
   "slug": "phrasly",
   "tagline": "Student-focused with plagiarism check",
-  "category": "Education",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$9.99/mo"

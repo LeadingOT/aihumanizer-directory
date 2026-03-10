@@ -2,7 +2,7 @@
   "name": "Smodin",
   "slug": "smodin",
   "tagline": "Multi-language rewriting and checking",
-  "category": "Multilingual",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$10/mo"

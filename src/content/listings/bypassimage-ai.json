@@ -1,0 +1,25 @@
+{
+  "name": "BypassImage.ai",
+  "slug": "bypassimage-ai",
+  "tagline": "Make AI images undetectable",
+  "category": "Image Bypass",
+  "description": "Transform AI-generated images to bypass detection tools. Uses advanced post-processing to make Midjourney, DALL-E, Stable Diffusion images appear authentic.",
+  "url": "https://bypassimage.com",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$19/mo"
+  },
+  "features": [
+    "Multi-model support",
+    "Batch processing",
+    "Quality preservation",
+    "Fast API"
+  ],
+  "rating": 4.8,
+  "tags": [
+    "Featured",
+    "Fast",
+    "High Quality"
+  ],
+  "lastUpdated": "2026-03-10"
+}

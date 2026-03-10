@@ -2,7 +2,7 @@
   "name": "HIX Bypass",
   "slug": "hix-bypass",
   "tagline": "100% bypass rate for all major detectors",
-  "category": "Premium",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$6.99/mo"

@@ -1,0 +1,25 @@
+{
+  "name": "AI Image Enhancer",
+  "slug": "ai-image-enhancer",
+  "tagline": "Enhance and humanize AI images",
+  "category": "Image Bypass",
+  "description": "Add natural imperfections and textures to AI-generated images to bypass detectors while maintaining quality.",
+  "url": "https://aiimageenhancer.io",
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$15/mo"
+  },
+  "features": [
+    "Texture overlay",
+    "Natural grain",
+    "Color grading",
+    "Metadata editing"
+  ],
+  "rating": 4.2,
+  "tags": [
+    "Enhancement",
+    "Textures",
+    "Professional"
+  ],
+  "lastUpdated": "2026-03-10"
+}

@@ -4,6 +4,12 @@ import ListingCard from '../components/ListingCard.astro';
 import { getCollection } from 'astro:content';
 
 const allListings = await getCollection('listings');
+const categories = ['Text Humanizer', 'Image Bypass', 'Video Enhancement'];
+const groupedListings = categories.map(cat => ({
+  name: cat,
+  slug: cat.toLowerCase().replace(/\s+/g, '-'),
+  tools: allListings.filter(l => l.data.category === cat)
+}));
 
 const schema = {
   '@context': 'https://schema.org',
@@ -27,13 +33,18 @@ const schema = {
     </p>
   </section>
 
-  <!-- Listings Grid -->
-  <section>
-    <h2 class="text-2xl font-bold mb-6">All Tools</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {allListings.map((listing) => (
-        <ListingCard {...listing.data} />
-      ))}
-    </div>
-  </section>
+  <!-- Category Sections -->
+  {groupedListings.map(({ name, slug, tools }) => tools.length > 0 && (
+    <section class="mb-12">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">{name}</h2>
+        <a href={`/category/${slug}`} class="text-blue-600 hover:underline text-sm">View all →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {tools.map((listing) => (
+          <ListingCard {...listing.data} />
+        ))}
+      </div>
+    </section>
+  ))}
 </BaseLayout>

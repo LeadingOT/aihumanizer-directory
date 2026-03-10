@@ -2,7 +2,7 @@
   "name": "Undetectable.AI",
   "slug": "undetectable-ai",
   "tagline": "Leading AI humanizer with built-in detector",
-  "category": "Premium",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$9.99/mo"

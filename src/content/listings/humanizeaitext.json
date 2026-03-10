@@ -2,7 +2,7 @@
   "name": "HumanizeAI Text",
   "slug": "humanizeaitext",
   "tagline": "Free instant AI to human converter",
-  "category": "Free Tools",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "free"
   },

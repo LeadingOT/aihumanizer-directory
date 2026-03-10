@@ -2,7 +2,7 @@
   "name": "BypassGPT",
   "slug": "bypassgpt",
   "tagline": "AI rewriting with SEO optimization",
-  "category": "SEO",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$9.99/mo"

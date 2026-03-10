@@ -1,0 +1,25 @@
+{
+  "name": "RealPic AI",
+  "slug": "realpic-ai",
+  "tagline": "Make AI photos look real",
+  "category": "Image Bypass",
+  "description": "Post-process AI-generated portraits to add realistic skin textures, lighting variations, and camera artifacts.",
+  "url": "https://realpic.ai",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$12/mo"
+  },
+  "features": [
+    "Portrait specialization",
+    "Skin texture",
+    "Camera effects",
+    "One-click processing"
+  ],
+  "rating": 4.4,
+  "tags": [
+    "Portraits",
+    "Free Tier",
+    "Easy"
+  ],
+  "lastUpdated": "2026-03-10"
+}

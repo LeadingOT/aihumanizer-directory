@@ -2,7 +2,7 @@
   "name": "NetusAI",
   "slug": "netusai",
   "tagline": "Detector + paraphraser combo",
-  "category": "Professional",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$19/mo"

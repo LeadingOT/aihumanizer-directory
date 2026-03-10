@@ -2,7 +2,7 @@
   "name": "AI Undetect",
   "slug": "ai-undetect",
   "tagline": "Fast processing with quality output",
-  "category": "Essentials",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$7.99/mo"

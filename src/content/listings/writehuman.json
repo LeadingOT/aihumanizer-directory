@@ -2,7 +2,7 @@
   "name": "WriteHuman",
   "slug": "writehuman",
   "tagline": "Meaning preservation with natural flow",
-  "category": "Content",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$9/mo"

@@ -2,7 +2,7 @@
   "name": "StealthWriter",
   "slug": "stealthwriter",
   "tagline": "Real-time detection checking",
-  "category": "Content",
+  "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
     "startingPrice": "$12/mo"
