@@ -1,0 +1,10 @@
+{
+  "name": "BypassGPT",
+  "slug": "bypassgpt",
+  "tagline": "AI rewriting with SEO optimization",
+  "category": "SEO",
+  "pricing": {"model": "freemium", "startingPrice": "$9.99/mo"},
+  "rating": 4.3,
+  "tags": ["SEO", "Keywords", "Bulk Processing"],
+  "website": "https://bypassgpt.ai"
+}

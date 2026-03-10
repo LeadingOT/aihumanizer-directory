@@ -1,0 +1,10 @@
+{
+  "name": "HumanizeAI Text",
+  "slug": "humanizeaitext",
+  "tagline": "Free instant AI to human converter",
+  "category": "Free Tools",
+  "pricing": {"model": "free"},
+  "rating": 3.7,
+  "tags": ["Free", "No Registration", "Instant"],
+  "website": "https://humanizeaitext.org"
+}

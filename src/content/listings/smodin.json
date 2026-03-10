@@ -1,0 +1,10 @@
+{
+  "name": "Smodin",
+  "slug": "smodin",
+  "tagline": "Multi-language rewriting and checking",
+  "category": "Multilingual",
+  "pricing": {"model": "freemium", "startingPrice": "$10/mo"},
+  "rating": 3.8,
+  "tags": ["100+ Languages", "Plagiarism", "Citations"],
+  "website": "https://smodin.io/rewriter"
+}

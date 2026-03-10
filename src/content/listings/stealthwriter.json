@@ -1,0 +1,10 @@
+{
+  "name": "StealthWriter",
+  "slug": "stealthwriter",
+  "tagline": "Real-time detection checking",
+  "category": "Content",
+  "pricing": {"model": "freemium", "startingPrice": "$12/mo"},
+  "rating": 4.1,
+  "tags": ["Real-time", "Quality", "API"],
+  "website": "https://stealthwriter.ai"
+}

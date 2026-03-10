@@ -1,0 +1,10 @@
+{
+  "name": "AI Undetect",
+  "slug": "ai-undetect",
+  "tagline": "Fast processing with quality output",
+  "category": "Essentials",
+  "pricing": {"model": "freemium", "startingPrice": "$7.99/mo"},
+  "rating": 3.9,
+  "tags": ["Fast", "Quality", "Simple UI"],
+  "website": "https://aiundetect.com"
+}

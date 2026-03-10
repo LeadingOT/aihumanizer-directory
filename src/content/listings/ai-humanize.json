@@ -1,0 +1,10 @@
+{
+  "name": "AI Humanize",
+  "slug": "ai-humanize",
+  "tagline": "Free unlimited AI humanization",
+  "category": "Free Tools",
+  "pricing": {"model": "free"},
+  "rating": 3.9,
+  "tags": ["Free", "Unlimited", "No Signup"],
+  "website": "https://aihumanize.com"
+}

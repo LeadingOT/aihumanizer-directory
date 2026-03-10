@@ -1,0 +1,10 @@
+{
+  "name": "QuillBot",
+  "slug": "quillbot",
+  "tagline": "Popular paraphrasing with AI modes",
+  "category": "Writing",
+  "pricing": {"model": "freemium", "startingPrice": "$8.33/mo"},
+  "rating": 4.4,
+  "tags": ["7 Modes", "Grammar", "Plagiarism"],
+  "website": "https://quillbot.com"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "WriteHuman",
+  "slug": "writehuman",
+  "tagline": "Meaning preservation with natural flow",
+  "category": "Content",
+  "pricing": {"model": "freemium", "startingPrice": "$9/mo"},
+  "rating": 4.1,
+  "tags": ["Meaning", "Natural Flow", "Bulk"],
+  "website": "https://writehuman.ai"
+}

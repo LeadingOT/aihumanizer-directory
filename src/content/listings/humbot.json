@@ -1,0 +1,10 @@
+{
+  "name": "Humbot",
+  "slug": "humbot",
+  "tagline": "Academic writing with Turnitin bypass",
+  "category": "Education",
+  "pricing": {"model": "freemium", "startingPrice": "$9.99/mo"},
+  "rating": 4.2,
+  "tags": ["Turnitin", "Academic", "Grammar"],
+  "website": "https://humbot.ai"
+}

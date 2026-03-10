@@ -1,0 +1,10 @@
+{
+  "name": "Undetectable.AI",
+  "slug": "undetectable-ai",
+  "tagline": "Leading AI humanizer with built-in detector",
+  "category": "Premium",
+  "pricing": {"model": "freemium", "startingPrice": "$9.99/mo"},
+  "rating": 4.6,
+  "tags": ["Built-in Detector", "Multiple Styles", "Bulk"],
+  "website": "https://undetectable.ai"
+}

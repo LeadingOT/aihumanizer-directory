@@ -1,0 +1,10 @@
+{
+  "name": "StealthGPT",
+  "slug": "stealthgpt",
+  "tagline": "Undetectable AI content generator",
+  "category": "Professional",
+  "pricing": {"model": "paid", "startingPrice": "$14.99/mo"},
+  "rating": 4.4,
+  "tags": ["Academic Mode", "Business Mode", "Chrome"],
+  "website": "https://stealthgpt.ai"
+}

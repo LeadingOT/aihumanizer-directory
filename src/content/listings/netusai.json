@@ -1,0 +1,10 @@
+{
+  "name": "NetusAI",
+  "slug": "netusai",
+  "tagline": "Detector + paraphraser combo",
+  "category": "Professional",
+  "pricing": {"model": "freemium", "startingPrice": "$19/mo"},
+  "rating": 4.2,
+  "tags": ["99.97% Bypass", "SEO", "Combo"],
+  "website": "https://netus.ai"
+}

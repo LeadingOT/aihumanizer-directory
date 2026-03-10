@@ -1,0 +1,10 @@
+{
+  "name": "HIX Bypass",
+  "slug": "hix-bypass",
+  "tagline": "100% bypass rate for all major detectors",
+  "category": "Premium",
+  "pricing": {"model": "freemium", "startingPrice": "$6.99/mo"},
+  "rating": 4.5,
+  "tags": ["100% Bypass", "SEO-friendly", "50+ Languages"],
+  "website": "https://hix.ai/bypass-ai-detection"
+}
