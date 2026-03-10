@@ -3,8 +3,22 @@
   "slug": "bypassgpt",
   "tagline": "AI rewriting with SEO optimization",
   "category": "SEO",
-  "pricing": {"model": "freemium", "startingPrice": "$9.99/mo"},
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$9.99/mo"
+  },
   "rating": 4.3,
-  "tags": ["SEO", "Keywords", "Bulk Processing"],
-  "website": "https://bypassgpt.ai"
+  "tags": [
+    "SEO",
+    "Keywords",
+    "Bulk Processing"
+  ],
+  "description": "AI rewriting with SEO optimization",
+  "url": "https://bypassgpt.ai",
+  "features": [
+    "SEO support",
+    "Keywords support",
+    "Bulk Processing support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

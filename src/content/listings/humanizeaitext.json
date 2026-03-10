@@ -3,8 +3,21 @@
   "slug": "humanizeaitext",
   "tagline": "Free instant AI to human converter",
   "category": "Free Tools",
-  "pricing": {"model": "free"},
+  "pricing": {
+    "model": "free"
+  },
   "rating": 3.7,
-  "tags": ["Free", "No Registration", "Instant"],
-  "website": "https://humanizeaitext.org"
+  "tags": [
+    "Free",
+    "No Registration",
+    "Instant"
+  ],
+  "description": "Free instant AI to human converter",
+  "url": "https://humanizeaitext.org",
+  "features": [
+    "Free support",
+    "No Registration support",
+    "Instant support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

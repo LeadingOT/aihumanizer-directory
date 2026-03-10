@@ -3,8 +3,22 @@
   "slug": "writehuman",
   "tagline": "Meaning preservation with natural flow",
   "category": "Content",
-  "pricing": {"model": "freemium", "startingPrice": "$9/mo"},
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$9/mo"
+  },
   "rating": 4.1,
-  "tags": ["Meaning", "Natural Flow", "Bulk"],
-  "website": "https://writehuman.ai"
+  "tags": [
+    "Meaning",
+    "Natural Flow",
+    "Bulk"
+  ],
+  "description": "Meaning preservation with natural flow",
+  "url": "https://writehuman.ai",
+  "features": [
+    "Meaning support",
+    "Natural Flow support",
+    "Bulk support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

@@ -3,8 +3,22 @@
   "slug": "smodin",
   "tagline": "Multi-language rewriting and checking",
   "category": "Multilingual",
-  "pricing": {"model": "freemium", "startingPrice": "$10/mo"},
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$10/mo"
+  },
   "rating": 3.8,
-  "tags": ["100+ Languages", "Plagiarism", "Citations"],
-  "website": "https://smodin.io/rewriter"
+  "tags": [
+    "100+ Languages",
+    "Plagiarism",
+    "Citations"
+  ],
+  "description": "Multi-language rewriting and checking",
+  "url": "https://smodin.io/rewriter",
+  "features": [
+    "100+ Languages support",
+    "Plagiarism support",
+    "Citations support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

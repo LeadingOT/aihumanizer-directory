@@ -3,8 +3,22 @@
   "slug": "humbot",
   "tagline": "Academic writing with Turnitin bypass",
   "category": "Education",
-  "pricing": {"model": "freemium", "startingPrice": "$9.99/mo"},
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$9.99/mo"
+  },
   "rating": 4.2,
-  "tags": ["Turnitin", "Academic", "Grammar"],
-  "website": "https://humbot.ai"
+  "tags": [
+    "Turnitin",
+    "Academic",
+    "Grammar"
+  ],
+  "description": "Academic writing with Turnitin bypass",
+  "url": "https://humbot.ai",
+  "features": [
+    "Turnitin support",
+    "Academic support",
+    "Grammar support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

@@ -3,8 +3,22 @@
   "slug": "cognibypass",
   "tagline": "Advanced neural rewriting",
   "category": "Advanced",
-  "pricing": {"model": "paid", "startingPrice": "$12.99/mo"},
-  "rating": 4.0,
-  "tags": ["Neural", "Context", "Tone Matching"],
-  "website": "https://cognibypass.com"
+  "pricing": {
+    "model": "paid",
+    "startingPrice": "$12.99/mo"
+  },
+  "rating": 4,
+  "tags": [
+    "Neural",
+    "Context",
+    "Tone Matching"
+  ],
+  "description": "Advanced neural rewriting",
+  "url": "https://cognibypass.com",
+  "features": [
+    "Neural support",
+    "Context support",
+    "Tone Matching support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

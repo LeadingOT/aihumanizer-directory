@@ -14,8 +14,6 @@ const listings = defineCollection({
     rating: z.number().optional(),
     tags: z.array(z.string()),
     website: z.string(),
-    description: z.string().optional(),
-    features: z.array(z.string()).optional(),
   }),
 });
 

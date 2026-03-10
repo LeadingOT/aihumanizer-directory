@@ -3,8 +3,22 @@
   "slug": "quillbot",
   "tagline": "Popular paraphrasing with AI modes",
   "category": "Writing",
-  "pricing": {"model": "freemium", "startingPrice": "$8.33/mo"},
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$8.33/mo"
+  },
   "rating": 4.4,
-  "tags": ["7 Modes", "Grammar", "Plagiarism"],
-  "website": "https://quillbot.com"
+  "tags": [
+    "7 Modes",
+    "Grammar",
+    "Plagiarism"
+  ],
+  "description": "Popular paraphrasing with AI modes",
+  "url": "https://quillbot.com",
+  "features": [
+    "7 Modes support",
+    "Grammar support",
+    "Plagiarism support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

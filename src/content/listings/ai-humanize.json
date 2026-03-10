@@ -3,8 +3,21 @@
   "slug": "ai-humanize",
   "tagline": "Free unlimited AI humanization",
   "category": "Free Tools",
-  "pricing": {"model": "free"},
+  "pricing": {
+    "model": "free"
+  },
   "rating": 3.9,
-  "tags": ["Free", "Unlimited", "No Signup"],
-  "website": "https://aihumanize.com"
+  "tags": [
+    "Free",
+    "Unlimited",
+    "No Signup"
+  ],
+  "description": "Free unlimited AI humanization",
+  "url": "https://aihumanize.com",
+  "features": [
+    "Free support",
+    "Unlimited support",
+    "No Signup support"
+  ],
+  "lastUpdated": "2026-03-10"
 }

@@ -3,8 +3,22 @@
   "slug": "phrasly",
   "tagline": "Student-focused with plagiarism check",
   "category": "Education",
-  "pricing": {"model": "freemium", "startingPrice": "$9.99/mo"},
-  "rating": 4.0,
-  "tags": ["Students", "Plagiarism", "Multiple Tones"],
-  "website": "https://phrasly.ai"
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$9.99/mo"
+  },
+  "rating": 4,
+  "tags": [
+    "Students",
+    "Plagiarism",
+    "Multiple Tones"
+  ],
+  "description": "Student-focused with plagiarism check",
+  "url": "https://phrasly.ai",
+  "features": [
+    "Students support",
+    "Plagiarism support",
+    "Multiple Tones support"
+  ],
+  "lastUpdated": "2026-03-10"
 }
