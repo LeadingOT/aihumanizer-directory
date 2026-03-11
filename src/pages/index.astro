@@ -18,12 +18,21 @@ const schema = {
   description: 'Compare the best AI humanizer tools to make AI content undetectable',
   url: Astro.url.origin,
 };
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best AI Humanizer Tools 2026",
+  "description": "Compare and review the top 18 tools in this category",
+  "numberOfItems": 18,
+  "url": "https://aihumanizer.tools"
+};
 ---
 
 <BaseLayout
   title="Best AI Humanizer Tools (2026) - Make AI Text Undetectable"
   description="Compare the best AI humanizer tools to make AI-generated content undetectable. Bypass AI detectors. Free trials available."
-  schema={schema}
+  schema={itemListSchema}
 >
   <!-- Hero -->
   <section class="text-center py-12">
