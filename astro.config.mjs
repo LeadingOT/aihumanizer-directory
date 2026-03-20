@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://aihumanizer.tools',
-  output: 'hybrid',
+  output: 'server',
   adapter: vercel(),
   
   vite: {
