@@ -1,18 +1,25 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://aihumanizer.tools',
-  output: 'server',
+  output: 'hybrid',
   adapter: vercel(),
   
   vite: {
     plugins: [tailwindcss()]
   },
   
-  integrations: [],
+  integrations: [
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    }),
+  ],
   
   build: {
     format: 'directory',

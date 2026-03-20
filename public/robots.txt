@@ -60,4 +60,4 @@ User-agent: ImagesiftBot
 Allow: /
 Disallow: /api/
 
-Sitemap: https://accountingai.tools/sitemap-index.xml
+Sitemap: https://aihumanizer.tools/sitemap.xml
