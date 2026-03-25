@@ -60,4 +60,4 @@ User-agent: ImagesiftBot
 Allow: /
 Disallow: /api/
 
-Sitemap: https://aihumanizer.tools/sitemap.xml
+Sitemap: https://aihumanizer.tools/sitemap-index.xml
