@@ -6,8 +6,7 @@
   "description": "Post-process AI-generated portraits to add realistic skin textures, lighting variations, and camera artifacts.",
   "url": "https://realpic.ai",
   "pricing": {
-    "model": "freemium",
-    "startingPrice": "$12/mo"
+    "model": "freemium"
   },
   "features": [
     "Portrait specialization",
@@ -23,5 +22,9 @@
   ],
   "lastUpdated": "2026-03-10",
   "seoTitle": "RealPic AI: Transform Your Photos to Realistic Art in 2026",
-  "seoDescription": "Discover how RealPic AI enhances your images with lifelike realism. Try it now to elevate your photography!"
+  "seoDescription": "Discover how RealPic AI enhances your images with lifelike realism. Try it now to elevate your photography!",
+  "linkDead": true,
+  "verifiedAt": "2026-07-10",
+  "verifyMethod": "web-verify-2026-07 (official site check + published pricing)",
+  "verifyEvidence": "https://www.atom.com/name/RealPic.ai"
 }

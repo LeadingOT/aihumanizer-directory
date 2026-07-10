@@ -5,7 +5,7 @@
   "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
-    "startingPrice": "$12/mo"
+    "startingPrice": "$20/mo"
   },
   "rating": 4.1,
   "tags": [
@@ -22,5 +22,8 @@
   ],
   "lastUpdated": "2026-03-10",
   "seoTitle": "StealthWriter 2026: Uncover Hidden Insights | Expert Evaluation",
-  "seoDescription": "Discover how StealthWriter enhances your writing with real-time detection. Find out why it's a must-have tool! Click to learn more."
+  "seoDescription": "Discover how StealthWriter enhances your writing with real-time detection. Find out why it's a must-have tool! Click to learn more.",
+  "verifiedAt": "2026-07-10",
+  "verifyMethod": "web-verify-2026-07 (official site check + published pricing)",
+  "verifyEvidence": "https://stealthwriter.ai"
 }

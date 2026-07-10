@@ -4,8 +4,8 @@
   "tagline": "Advanced neural rewriting",
   "category": "Text Humanizer",
   "pricing": {
-    "model": "paid",
-    "startingPrice": "$12.99/mo"
+    "model": "freemium",
+    "startingPrice": "$20/mo"
   },
   "rating": 4,
   "tags": [
@@ -22,5 +22,8 @@
   ],
   "lastUpdated": "2026-03-10",
   "seoTitle": "CogniBypass: Transform Your Writing in 2026 | Game-Changer?",
-  "seoDescription": "Unlock creativity with CogniBypass! Discover how AI rewriting enhances content like never before. Try it now!"
+  "seoDescription": "Unlock creativity with CogniBypass! Discover how AI rewriting enhances content like never before. Try it now!",
+  "verifiedAt": "2026-07-10",
+  "verifyMethod": "web-verify-2026-07 (official site check + published pricing)",
+  "verifyEvidence": "https://cognibypass.com/pricing"
 }

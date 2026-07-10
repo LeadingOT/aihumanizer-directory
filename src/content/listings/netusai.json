@@ -5,7 +5,7 @@
   "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
-    "startingPrice": "$19/mo"
+    "startingPrice": "$14/mo"
   },
   "rating": 4.2,
   "tags": [
@@ -22,5 +22,8 @@
   ],
   "lastUpdated": "2026-03-10",
   "seoTitle": "NetusAI: The Ultimate Paraphrasing Tool of 2026?",
-  "seoDescription": "Discover how NetusAI's unique detector + paraphraser combo elevates your writing. Try it today and transform your content!"
+  "seoDescription": "Discover how NetusAI's unique detector + paraphraser combo elevates your writing. Try it today and transform your content!",
+  "verifiedAt": "2026-07-10",
+  "verifyMethod": "web-verify-2026-07 (official site check + published pricing)",
+  "verifyEvidence": "https://netus.ai/pricing"
 }

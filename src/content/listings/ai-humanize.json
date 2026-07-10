@@ -4,7 +4,8 @@
   "tagline": "Free unlimited AI humanization",
   "category": "Text Humanizer",
   "pricing": {
-    "model": "free"
+    "model": "freemium",
+    "startingPrice": "$12/mo"
   },
   "rating": 3.9,
   "tags": [
@@ -21,5 +22,8 @@
   ],
   "lastUpdated": "2026-03-10",
   "seoTitle": "AI Humanize: Transform Text to Natural Dialogue in 2026",
-  "seoDescription": "Discover how AI Humanize elevates your content! Free unlimited AI humanization—try it today and captivate your audience!"
+  "seoDescription": "Discover how AI Humanize elevates your content! Free unlimited AI humanization—try it today and captivate your audience!",
+  "verifiedAt": "2026-07-10",
+  "verifyMethod": "web-verify-2026-07 (official site check + published pricing)",
+  "verifyEvidence": "https://aihumanize.com/pricing/"
 }

@@ -5,7 +5,7 @@
   "category": "Text Humanizer",
   "pricing": {
     "model": "freemium",
-    "startingPrice": "$9.99/mo"
+    "startingPrice": "$11.99/mo"
   },
   "rating": 4.2,
   "tags": [
@@ -22,5 +22,8 @@
   ],
   "lastUpdated": "2026-03-10",
   "seoTitle": "Humbot 2026: Your Ultimate Academic Writing Companion",
-  "seoDescription": "Unlock seamless academic writing with Humbot in 2026. Get started today!"
+  "seoDescription": "Unlock seamless academic writing with Humbot in 2026. Get started today!",
+  "verifiedAt": "2026-07-10",
+  "verifyMethod": "web-verify-2026-07 (official site check + published pricing)",
+  "verifyEvidence": "https://humbot.ai/pricing"
 }
